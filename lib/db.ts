@@ -2,8 +2,12 @@ import { DatabaseSync } from 'node:sqlite';
 import path from 'path';
 import fs from 'fs';
 
-const DB_PATH = path.join(process.cwd(), 'te-matemata.db');
-const LEGACY_VOICE_DB = path.join(process.cwd(), 'think-aloud.db');
+const DB_PATH = process.env.VERCEL
+  ? path.join('/tmp', 'te-matemata.db')
+  : path.join(process.cwd(), 'te-matemata.db');
+const LEGACY_VOICE_DB = process.env.VERCEL
+  ? path.join('/tmp', 'think-aloud.db')
+  : path.join(process.cwd(), 'think-aloud.db');
 
 let db: DatabaseSync;
 
