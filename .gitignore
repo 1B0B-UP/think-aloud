@@ -1,0 +1,8 @@
+node_modules
+.next
+.DS_Store
+*.db
+*.db-shm
+*.db-wal
+next-env.d.ts
+tsconfig.tsbuildinfo
