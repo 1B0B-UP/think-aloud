@@ -2,6 +2,8 @@
 
 Unified personal training platform with two modes: voice-coached critical thinking and engineering study.
 
+> **Requires Ollama to run locally.** The live demo is deployed but neither the Think mode (AI coaching) nor the Learn mode AI features (quizzes, summaries) will work without [Ollama](https://ollama.com) running on the same machine. Pull the default model with `ollama pull llama3.2:3b` before starting.
+
 ## Think — voice critical thinking
 
 Work through scenarios out loud using a structured four-step framework:
